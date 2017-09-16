@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="ylee447.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<title></title>
+
+
+
+</head>
+
+<body>
+    <div id="navigationBar">
+        <a href="#" id="home-link">Home</a>
+        <a href="#" id="register-link">Register</a>
+        <a href="#" id="book-link">Book Page</a>
+        <a href="#" id="bluray-link">Bluray Page</a>        
+        <a href="#" id="comment-link">Comments</a>
+    </div>
+    <br />
+
+
+    <div id="home-page" style="display: block;">
+
+        <div id="home-content" type="text">
+			<img id="logoImage" alt="Logo" src="http://redsox.uoa.auckland.ac.nz/BC/Open/Service.svc/logo" width="200" height="200" />
+			<h1>Welcome to La Boutique Cassée!</h1>
+        </div>
+        
+    </div>
+
+    <div id="book-page" style="display: none;">
+		<div id="book-content">
+			<img id="logoImage" alt="Logo" src="http://redsox.uoa.auckland.ac.nz/BC/Open/Service.svc/logo" width="200" height="200" />
+			<div id="searchEngine">
+				<br />
+				Search:
+				<input id="term" type="text" name="Term" />
+				<button onclick="searchBookList()">Search</button>
+				<button onclick="getBookList()">Show all Books</button><br />
+				<br />
+			</div>
+			<div id="tableContainer">
+				<table id="showBookList"></table>
+			</div>
+		</div>
+
+    </div>
+
+    <div id="bluray-page" style="display: none;">
+		<div id="bluray-content">
+			<img id="logoImage" alt="Logo" src="http://redsox.uoa.auckland.ac.nz/BC/Open/Service.svc/logo" width="200" height="200" />
+			<div id="searchEngine">
+				<br />
+				Search:
+				<input id="blurayterm" type="text" name="Term" />
+				<button onclick="searchBlueRayList()">Search</button>
+				<button onclick="getBlueRayList()">Show all Bluray</button><br />
+				<br />
+			</div>
+
+			<div id="tableContainer">
+				<table id="showBlueRayList"></table>
+			</div>
+		</div>
+
+    </div>
+
+    <div id="register-page" style="display:none;">
+		<div id="register-content">
+			<img alt="Logo" src="http://redsox.uoa.auckland.ac.nz/BC/Open/Service.svc/logo" width="200" height="200" />
+			<h2>Sign up</h2>
+			<div id="userRegistration">
+				Address: <br />
+				<input id="address" type="text" name="Address" />
+				<br />
+				Username: <br />
+				<input id="userName" type="text" name="Username" />
+				<br />
+				Password: <br />
+				<input id="password" type="text" name="Password" />
+				<br />
+				<br />
+				<button id="registerButton" onclick="registerUser()">Register</button>
+
+			</div>
+		</div>
+    </div>
+
+    <div id="comment-page" style="display: none;">
+		<div id="comment-content">
+			<img id="logoImage" alt="Logo" src="http://redsox.uoa.auckland.ac.nz/BC/Open/Service.svc/logo" width="200" height="200" />
+			<div id="commentInputPage">
+			<h2>Comments</h2>
+			<div id="inputFields">
+				Name: <br />
+				<input id="nameInput" type="text" name="Name" />
+				<br />
+				<br />
+				Comment: <br />
+				<textarea id="commentInput" rows="10" cols="50">
+
+				</textarea>
+				<br />
+				<br />
+				<button id="postButton" onclick="postComment()">Post</button>
+				<br />
+				<br />
+				<br />
+				<br />
+				</div>
+			</div>
+			<table id="showComments"></table>
+		</div>
+
+
+    </div>
+    
+    
+
+
+
+
+
+
+  
+
+
+
+
+
+        <script type="text/javascript" src="ylee447.js"></script>
+</body>
+</html>
